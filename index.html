@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M n U</title>
+  <link rel="stylesheet" type="text/css" href="css/inline.css">
+  <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Freckle Face' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+ 
+  <link rel="manifest" href="manifest.json">
+
+  <script type="text/javascript">
+    (function () {
+      'use strict';
+
+      var onload = function () {
+       
+        if (!window.HTMLImports) {
+          document.dispatchEvent(
+            new CustomEvent('WebComponentsReady', { bubbles: true })
+          );
+        }
+      };
+
+      var webComponentsSupported = (
+        'registerElement' in document && 'import' in document.createElement('link') && 'content' in document.createElement('template')
+      );
+
+      if (!webComponentsSupported) {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'bower_components/webcomponentsjs/webcomponents-lite.js';
+        script.onload = onload;
+        document.head.appendChild(script);
+      } else {
+        onload();
+      }
+    })();
+  </script>
+ 
+</head>
+<body>
+  <div id="headerdiv">
+    <header class="header">
+      <div id="headerContentDiv">
+      <div id="logodiv">
+      <img id="logo" src="images/logo.png"></img>
+    
+      <div id="headerTitle">M n U</div>
+    </div>
+  </div>
+    </header>
+  </div>
+  <div id ="RestaurantDetails">
+    <iron-label id="restaurantname">Barbeque Nation</iron-label>
+    <div id ="cart"><i class="fab fa-opencart"></i></div>
+  </div>
+<div id="menu">
+    <button class="accordion">Soups</button>
+    <div class="panel">
+       <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Tomato Soup</iron-label></div><br>
+
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Cream of Mushroom Soup</iron-label></div><br>
+
+        <div id ="foodItem"><img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Naatu Kozhi Milagu Saaru</iron-label></div><br>
+
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Cream of Chicken Soup</iron-label></div><br>
+    </div>
+    
+    <button class="accordion">Starters</button>
+    <div class="panel">
+        <div id ="foodItem">  <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Gobi Manchurian</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Pepper Mushroom</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Andhra Chicken Fry</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Shahi Grilled Chicken</iron-label></div><br>
+    </div>
+    
+    <button class="accordion">Main Course</button>
+    <div class="panel">
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Kadai Paneer</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Veg Mix Curry</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Hariyali Chicken Curry</iron-label></div><br>
+        
+        <div id ="foodItem"><img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Mutton Varuthu Aracha Kozhambu</iron-label></div><br>
+    </div>
+
+    <button class="accordion">Biriyani</button>
+    <div class="panel">
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Mushroom Biriyani</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Paneer Biriyani</iron-label></div><br>
+        
+        <div id ="foodItem"><img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Green Mirchi Hyderbadi Chicken Biriyani</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Mutton Kheema Biriyani</iron-label></div><br>
+    </div>
+    <button class="accordion">Chinese Items</button>
+    <div class="panel">
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Veg Hakka Noodles</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Schezwan Veg Fried Rice</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Chcicken American Chopsuey</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Mixed Meat Fried Rice</iron-label></div><br>
+    </div>
+
+    <button class="accordion">Burgers and Pasta</button>
+    <div class="panel">
+        <div id ="foodItem"><img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Veg Chipotle Burger</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Shredded Mushroom Burger</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Pulled Chicken Burger</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Peri Peri Chicken Burger</iron-label></div><br>
+    </div>
+
+    <button class="accordion">Desserts and Beverages</button>
+    <div class="panel">
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Berry'd Alive</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="veg" src="images/veg.png"></img>
+        <iron-label id="food">Gulab Jamun</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">Choco Fudge</iron-label></div><br>
+        
+        <div id ="foodItem"> <img id="nonveg" src="images/nonveg.png"></img>
+        <iron-label id="food">New York Cheesecake</iron-label></div><br>
+    </div>
+</div>
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+    
+    
+    var acc = document.getElementsByClassName("accordion");
+    var panel = document.getElementsByClassName('panel');
+    
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            var setClasses = !this.classList.contains('active');
+            setClass(acc, 'active', 'remove');
+            setClass(panel, 'show', 'remove');
+    
+            if (setClasses) {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    }
+    
+    function setClass(els, className, fnName) {
+        for (var i = 0; i < els.length; i++) {
+            els[i].classList[fnName](className);
+        }
+    }
+    
+    });
+    </script>
+  <!--
+      Attempt to register a service worker with the correct scope. Fail quietly
+      if this doesn't work, but log the result to the console.
+    -->
+    <script async type="text/javascript">
+
+      if ('serviceWorker' in navigator) {
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+          // Do not register for dev environments
+          console.log('Dev environment detected, skipping ServiceWorker registration.');
+          navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            // Unregister any service workers that exist for this app
+            for (var i=0; i<registrations.length; i++) {
+              console.log('Unregistering existing service worker.');
+              registrations[i].unregister();
+            }
+          });
+        } else {
+          navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(function(err) {
+            // Registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        }
+      }
+    </script>
+
+</body>
+
+</html>
