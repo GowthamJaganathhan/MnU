@@ -106,6 +106,12 @@ div#logodiv {
   display: -webkit-inline-box;
   margin-top: 6px;
 }
+
+p#price {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  margin-left: auto;
+}
 div#titlediv {
   display: -webkit-inline-box;
 }
