@@ -40,7 +40,8 @@
   "scripts": {
     "start": "node server/app.js",
     "test": "./node_modules/.bin/wct",
-    "build": "./scripts/build.sh"
+    "build": "./scripts/build.sh",
+    "postinstall": " npm install && npm install -g bower && npm install -g polymer-cli && gulp serve"
   },
   "dependencies": {
     "@polymer/iron-collapse": "^3.0.1",
